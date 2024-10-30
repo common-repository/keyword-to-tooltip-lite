@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS keyword_to_tooltip_lite_keyword (
+  id INT NOT NULL AUTO_INCREMENT ,
+  keyword VARCHAR(500) NOT NULL ,
+  description LONGTEXT NOT NULL ,
+  highlight_color VARCHAR(25) NOT NULL ,
+  panel_animation VARCHAR(25) NOT NULL ,
+  panel_color VARCHAR(25) NOT NULL ,
+  creation_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+  PRIMARY KEY (id))
+  CHARACTER SET utf8 COLLATE utf8_general_ci
+ENGINE = InnoDB;
